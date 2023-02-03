@@ -1,5 +1,5 @@
 /* Essa atividade é pra fazer uma class que tem todos os atributos do aluno, como media do 
- * aluno e situação do aluno;
+ * aluno e situação do aluno e dados;
  */
 
  import Aluno.Aluno;
