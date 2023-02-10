@@ -22,19 +22,19 @@ public class Aluno {
     return notaB2;
   }
 
-  public Float mediaAluno(){
-    float media = (getNotaB1() + getNotaB2())/2;
+  public Float mediaAluno(int pesoB1 , int pesoB2){
+    float media = ((getNotaB1() * pesoB1) + (getNotaB2() * pesoB2))/(pesoB1 + pesoB2);
     return media;
   }  
 
   public String situacaoAluno(){
 
-    return mediaAluno() >= 6 ? "Aprovado" : "Reprovado";
+    return mediaAluno( 5, 5) >= 6 ? "Aprovado" : "Reprovado";
   }
 
   @Override
   public String toString() {
    
-    return " Nome do aluno: "  + getNomeAluno() + "\n" + " Nota do aluno: " + mediaAluno() + "\n" + " Situação do aluno: " + situacaoAluno();
+    return " Nome do aluno: "  + getNomeAluno() + "\n" + " Nota do aluno: " + mediaAluno(5,5) + "\n" + " Situação do aluno: " + situacaoAluno();
   }
 }
