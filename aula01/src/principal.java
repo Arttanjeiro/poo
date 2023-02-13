@@ -21,10 +21,10 @@ public class principal {
     System.out.println("\n");
 
       System.out.println("Conta bancario");
-    Conta conta1 = new Conta("Arthur", 1500, 300);
+    Conta conta1 = new Conta("Arthur", 10, 100);
     
-    conta1.deposito(100);
-    conta1.sacar(500);
+    conta1.deposito(150);
+    conta1.sacar(200);
     System.out.println(" **********************************************");
    System.out.println( conta1.toString());
 

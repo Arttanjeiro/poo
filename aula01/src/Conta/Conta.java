@@ -38,7 +38,7 @@ public class Conta {
   }
 
   public boolean sacar(double valor){
-    if(this.saldo>= valor && valor > 0 ){
+    if(this.saldo + this.limite >= valor){
         this.saldo -= valor;
         System.out.println(" Saque de: " + valor + " realizado com sucesso");
         return true;
