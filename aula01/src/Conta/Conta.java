@@ -38,7 +38,7 @@ public class Conta {
   }
 
   public boolean sacar(double valor){
-    if(this.saldo + this.limite >= valor){
+    if(this.limite  + this.saldo >= valor){
         this.saldo -= valor;
         System.out.println(" Saque de: " + valor + " realizado com sucesso");
         return true;
@@ -55,7 +55,7 @@ public class Conta {
   @Override
   public String toString() {
     // TODO Auto-generated method stub
-  return " Dados do cliente: " + getCliente()  + "\n" + " Saldo disponível: " + getSaldo();
+  return " Dados do cliente: " + getCliente()  + "\n" + " Saldo disponível: " + getSaldo() + "\n" + " Limete:" + getLimite();
   }
 
 }
