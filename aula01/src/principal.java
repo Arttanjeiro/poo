@@ -34,7 +34,7 @@ public class principal {
      */
 
     System.out.println("Calcula o IMC da pessoa");
-    Pessoa pessoa1 = new Pessoa("Arthur", 75, 1.94);
+    Pessoa pessoa1 = new Pessoa("Arthur", 70, 1.94);
     System.out.println(pessoa1.toString());
     System.out.println(pessoa1.imc());
     
