@@ -6,8 +6,8 @@ public class principal {
   public static void main(String[] args) {
     Emprestimo emprestimo    = new Emprestimo("Arthur", 3000, 1000, 10, 0.1);
 
-    System.out.println(emprestimo.mostraTodasAsParcela());
     System.out.println(emprestimo.toString());
+    emprestimo.mostraTodasAsParcela();
 
     System.out.println("************************** \n");
     

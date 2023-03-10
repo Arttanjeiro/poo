@@ -53,19 +53,19 @@ public class Emprestimo {
     return calcularValorParcela() <= limiteParcela;
   }
 
-  public String mostraTodasAsParcela() {
-    double valores = this.valor;
+  public void mostraTodasAsParcela() {
+    
 
     
     for (int i = 1; i <= this.parcelas; i++) {
-      double mostrarTodaAsParcelas = getValor() * Math.pow((1 + this.taxaJuros), i);
+     
 
-      valores -= mostrarTodaAsParcelas;
-      System.out.println("Parcela de " + i + " valor: R$ "
-          + mostrarTodaAsParcelas + "\n");
+      System.out.format("Parcela de %d valor: R$ %.2f \n", i, calcularValorParcela());
     }
-    return "Mostrando todos os valores da parcelas";
-  }
+   
+    }
+
+  
 
   public String situacao(boolean verificarAprovacao) {
 
